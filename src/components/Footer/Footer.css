@@ -1,0 +1,208 @@
+.footer {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    font-size: 14px;
+    width: 100%;
+    color: #333;
+  }
+    
+  .logo_lang {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(63, 4, 119);
+    margin-left: 50px;
+  }
+  
+  .dropdown {
+    margin-left: 20px;
+  }
+  
+  .dropdown-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid #462686;
+    border-radius: 10px;
+    padding: 7px 10px;
+    color: #462686;
+  }
+  
+  .dropdown-button:hover {
+    opacity: 0.8;
+  }
+  
+  .dropdown-content {
+    position: absolute; /* Position dropdown below button */
+    top: 100%; /* Display content below button */
+    left: 0; /* Align content with left side of button */
+    background-color: #fff; /* White background */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px;
+    list-style: none; /* Remove default list styling */
+    z-index: 1; /* Ensure dropdown appears above other elements */
+  }
+  
+  .dropdown-content li {
+    margin-bottom: 5px; /* Add space between list items */
+  }
+  
+  .dropdown-content a {
+    color: #000; /* Black text */
+    text-decoration: none; /* Remove underline */
+  }
+
+  .icon-world {
+    margin-right: 10px;
+  }
+
+  .icon-arrow {
+    margin-left: 50px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .contact-col {
+    margin-left: 40px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .addy {
+    font-size: 16px;
+    font-weight: 550;
+  }
+  
+  .links-container {
+    margin-bottom: 70px;
+  }
+  
+  .links-container a {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .get-touch {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .number {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .social-links {
+    display: flex;
+  }
+  
+  .social-links a {
+    color: #000;
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: start;
+  }
+  
+  .footer-col:nth-child(1) {
+    flex: initial;
+    margin-bottom: 0;
+  }
+  
+  .head {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    padding-left: 40px;
+  }
+  
+  .links li {
+    margin-bottom: 5px;
+    list-style: none;
+  }
+  
+  .links a {
+    color: #000;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 768px) {
+    .footer {
+      padding: 10px; /* Adjust overall padding */
+    }
+  
+    .logo_lang {
+      margin-bottom: 20px; /* Add spacing between sections */
+    }
+  
+    .footer-content {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center;
+    }
+  
+    .footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-col {
+      padding: 10px 0; /* Add padding for spacing between columns */
+      text-align: center;
+    }
+  
+    .contact-col {
+      margin-top: 10px;
+    }
+  
+    .links-container {
+      margin-bottom: 40px;
+    }
+  
+    .dropdown-button {
+      width: 100%; /* Full-width dropdown button on mobile */
+    }
+  
+    .links-container a {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .head {
+      padding-left: 0;
+    }
+
+    .contact-col {
+      margin: 0;
+      text-align: center;
+    }
+
+    .social-links {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }

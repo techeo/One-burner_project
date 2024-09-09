@@ -1,0 +1,112 @@
+/* Header.css */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+.logo-img {
+  width: 160px;
+  padding-left: 0%;
+}
+.header nav p {
+  margin: 0 1rem;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+
+.header .left {
+  margin-right: 80px;
+}
+.header .right {
+  margin-left: 80px;
+}
+
+.contact {
+  padding-right: 20px;
+}
+
+.header button.tryForFreeButton {
+  background-color: #462686;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.7rem;
+  margin-left: 30px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.header button.tryForFreeButton:hover {
+  background-color: #ffdb4d; /* Lighter yellow on hover */
+}
+.mobile {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  /* Hide the existing nav content */
+  nav.right, nav.left {
+    display: none;
+  }
+
+  /* Adjust logo size for mobile */
+  .logo-img {
+    width: 120px;
+    margin: 20px;
+  }
+
+  /* Show the hamburger menu icon */
+  .giHamburgerMenu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobile-nav{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.nav-mobile{
+  display: flex;
+  flex-direction: column;
+}
+.nav-mobile Link{
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+}

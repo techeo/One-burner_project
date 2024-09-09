@@ -1,0 +1,46 @@
+.integration-tools {
+    text-align: center;
+    padding: 3rem 2rem;
+      align-content: center;
+      width: 90%;
+    box-sizing: border-box;
+}
+
+  .integration-tools h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+    font-weight: normal;
+  }
+  
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 3.5rem;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .tool-item img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .tool-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .tools-grid {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      gap: 1rem;
+    }
+  
+    .integration-tools h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  

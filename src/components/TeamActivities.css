@@ -1,0 +1,104 @@
+/* TeamActivities.css */
+
+.team-activities {
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .tabs {
+    margin: auto;
+    width: 90%;
+    border: 1px solid #333333;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .tab-button {
+    background-color: white;
+    padding: 1rem 3.3rem;
+    margin: 0 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button.active {
+    background-color: #462686; /* Highlight color */
+    color: white;
+    border: none;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem;
+  }
+  
+  .text-section {
+    flex: 1;
+    padding: 3rem;
+  }
+  
+  .text-section h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #333333;
+  }
+  
+  .text-section p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .image-section {
+    padding: 3rem;
+    position: relative;
+    flex: 1;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .team-activities {
+      padding: 1rem;
+      box-sizing: border-box; /* Reduce padding for small screens */
+    }
+  
+    .tabs {
+      width: 80%; /* Full width */
+      flex-direction: column; /* Vertical layout for tabs */
+    }
+  
+    .tab-button {
+      padding: 0.8rem 1.5rem; /* Smaller padding */
+      font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .content {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  }  

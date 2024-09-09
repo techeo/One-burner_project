@@ -1,0 +1,43 @@
+.companies {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid;
+  }
+  
+  .companies p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  .company-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .company-logos img {
+    max-height: 100px;
+    max-width: 150px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .company-logos img:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+     .company-logos {
+      gap: 0.5rem;
+     }
+  }
+  
+
+
+  

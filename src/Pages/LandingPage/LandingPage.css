@@ -1,0 +1,161 @@
+
+.team-collaboration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .collaboration-text {
+    padding: 3rem;
+    max-width: 40%;
+  }
+  
+  .collaboration-text h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #4f2db6;
+    margin-bottom: 3rem;
+  }
+  
+  .collaboration-text p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .start-trial {
+    background-color: #4f2db6;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+.collaboration-avatar {
+  padding-left: 6rem;
+}
+
+.cii {
+  width: 95%;
+}
+
+.line {
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);}
+
+/* TeamFeatures.css */
+
+.team-features {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+  color: #333333;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  padding: 6rem;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  width: 50%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.feature-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.feature-text p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  @media (max-width: 768px) {
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .team-collaboration {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: flex-start; /* Align items to the start */
+        padding: 1.5rem;
+    }
+
+    .collaboration-text {
+        max-width: 100%; /* Use full width */
+        padding: 1rem 0; /* Adjust padding */
+        text-align: center;
+    }
+
+    .collaboration-text h1 {
+        font-size: 2rem; /* Reduce font size */
+        margin-bottom: 1rem; /* Reduce margin */
+    }
+
+    .collaboration-text p {
+        font-size: 1rem; /* Slightly reduce font size */
+        line-height: 1.8rem; /* Adjust line height */
+        margin-bottom: 1rem; /* Reduce margin */
+    }
+
+    .collaboration-avatar {
+        margin-top: 1.5rem; /* Add spacing between text and image */
+        width: 100%; /* Ensure image takes full width */
+        text-align: center; /* Center the image */
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .collaboration-avatar img {
+        max-width: 80%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .start-trial {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 0.8rem 1.2rem; /* Adjust button padding */
+    }
+}
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .feature.reverse {
+    flex-direction: column;
+  }
+
+  .feature-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
